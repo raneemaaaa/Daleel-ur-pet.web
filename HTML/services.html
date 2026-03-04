@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="دلّل حيوانك - Dalel | خدمات رعاية الكلاب الشاملة في هونغ كونغ - إقامة، حلاقة، بيطري، تمشية وأكثر" />
+  <title>دلّل حيوانك - Dalel | خدماتنا</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/style.css" />
+</head>
+<body>
+
+<a href="#main" class="skip-link">انتقل للمحتوى الرئيسي</a>
+
+<div class="a11y-panel" id="a11yPanel">
+  <h4 data-key="a11y_title">إمكانية الوصول</h4>
+  <div class="a11y-option">
+    <span data-key="a11y_contrast">تباين عالي</span>
+    <label class="toggle-switch"><input type="checkbox" id="toggleContrast"><label for="toggleContrast"></label></label>
+  </div>
+  <div class="a11y-option">
+    <span data-key="a11y_dyslexic">خط للقراءة</span>
+    <label class="toggle-switch"><input type="checkbox" id="toggleDyslexic"><label for="toggleDyslexic"></label></label>
+  </div>
+  <div class="a11y-option">
+    <span data-key="a11y_underline">تسطير الروابط</span>
+    <label class="toggle-switch"><input type="checkbox" id="toggleUnderline"><label for="toggleUnderline"></label></label>
+  </div>
+</div>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <div class="navbar-logo">
+      <a href="../index.html">🐾 <span>دلّل</span> حيوانك</a>
+    </div>
+    <ul class="navbar-links" id="navLinks">
+      <li><a href="../index.html" data-key="nav_home">الرئيسية</a></li>
+      <li><a href="about.html" data-key="nav_about">من نحن</a></li>
+      <li><a href="services.html" class="active" data-key="nav_services">الخدمات</a></li>
+      <li><a href="packages.html" data-key="nav_packages">الحزم</a></li>
+      <li><a href="booking.html" data-key="nav_booking">احجز الآن</a></li>
+      <li><a href="reviews.html" data-key="nav_reviews">آراء العملاء</a></li>
+      <li><a href="contact.html" data-key="nav_contact">تواصل معنا</a></li>
+      <li><a href="rating.html" data-key="nav_rating">قيّمنا</a></li>
+    </ul>
+    <div class="navbar-controls">
+      <div class="font-controls">
+        <button class="font-btn" onclick="decreaseFontSize()">A-</button>
+        <button class="font-btn" onclick="increaseFontSize()">A+</button>
+      </div>
+      <button class="lang-btn" id="langBtn" onclick="toggleLanguage()">English</button>
+      <button class="a11y-btn" onclick="toggleA11yPanel()">♿</button>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+<div class="page-banner">
+  <h1 data-key="services_page_title">خدماتنا</h1>
+  <p data-key="services_page_sub">كل ما يحتاجه حيوانك الأليف في مكان واحد</p>
+  <div class="breadcrumb">
+    <a href="../index.html">الرئيسية</a><span>›</span><span>الخدمات</span>
+  </div>
+</div>
+
+<!-- MAIN SERVICES -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">خدماتنا <span>الأساسية</span></h2>
+    <div class="section-divider"></div>
+
+    <!-- SERVICE 1 -->
+    <div class="about-grid" style="margin-bottom: 50px;">
+      <div class="about-img-box">
+        <img src="https://images.pexels.com/photos/1254140/pexels-photo-1254140.jpeg?auto=compress&cs=tinysrgb&w=500" alt="غرف الإقامة" />
+      </div>
+      <div class="about-text">
+        <h2>🏠 الإقامة والمبيت</h2>
+        <p>توفر <a href="../index.html" style="color: var(--green-soft); font-weight:bold;">دلّل حيوانك</a> غرفاً مريحة وجميلة مجهزة بأفضل المرافق لضمان راحة كلبك التامة. كل غرفة تحتوي على فراش مريح ودافئ، تدفئة وتبريد أرضي، تلفزيون لعرض برامج مخصصة للكلاب، ومنطقة لعب صغيرة.</p>
+        <p>نضمن نظافة الغرف بتطهيرها بالكامل بين كل إقامة وإقامة باستخدام منتجات آمنة وصديقة للبيئة. الغرف مخصصة لكلب واحد لضمان الراحة والهدوء الكامل.</p>
+        <p>متاح: غرف عادية، غرف كبيرة، وغرف فاخرة مع مزيد من المميزات حسب الحزمة المختارة.</p>
+        <span class="price-tag">من HK$180/يوم</span>
+      </div>
+    </div>
+
+    <!-- SERVICE 2 -->
+    <div class="about-grid" style="margin-bottom: 50px; direction: ltr;" dir="ltr">
+      <div class="about-text" style="direction: rtl;">
+        <h2>✂️ صالة الحلاقة والعناية</h2>
+        <p>فريق متخصص من مصففي شعر الكلاب المحترفين يهتم بكل تفصيل في مظهر كلبك. نقدم خدمات الاستحمام بمنتجات عالية الجودة، الحلاقة حسب سلالة الكلب، تشذيب الأظافر، تنظيف الأذنين والعيون، وتنظيف الأسنان.</p>
+        <p>نستخدم منتجات طبيعية وآمنة مناسبة لأنواع الجلد والشعر المختلفة. يخرج كلبك من صالتنا مهندماً وجميلاً وذو رائحة رائعة!</p>
+        <p>متوفرة باقات كاملة أو خدمات منفصلة حسب الحاجة. يمكن دمج خدمة الحلاقة مع الإقامة أو كخدمة يومية منفردة.</p>
+        <span class="price-tag">من HK$120/جلسة</span>
+      </div>
+      <div class="about-img-box">
+        <img src="https://images.pexels.com/photos/3361739/pexels-photo-3361739.jpeg?auto=compress&cs=tinysrgb&w=500" alt="صالة الحلاقة" />
+      </div>
+    </div>
+
+    <!-- SERVICE 3 -->
+    <div class="about-grid" style="margin-bottom: 50px;">
+      <div class="about-img-box">
+        <img src="https://images.pexels.com/photos/1564506/pexels-photo-1564506.jpeg?auto=compress&cs=tinysrgb&w=500" alt="التمشية في الغابة" />
+      </div>
+      <div class="about-text">
+        <h2>🌿 التمشية والأنشطة الخارجية</h2>
+        <p>نقدم خدمات التمشية اليومية في مناطق خضراء جميلة قريبة من مرفقنا. مشياتنا ليست مجرد خروج - إنها تجربة استكشافية ممتعة تحفز الكلاب جسدياً وعقلياً.</p>
+        <p>نوفر التمشية في غابات المحمية الطبيعية القريبة، مسارات الرشاقة والتمرين، حفر حفر الرمال المفضلة لدى الكلاب، والمراعي الخضراء الخارجية الآمنة.</p>
+        <p>جميع التمشيات تتم مع مشرف متخصص وبمعدل 1 مشرف لكل 3 كلاب على الأكثر لضمان السلامة الكاملة.</p>
+        <span class="price-tag">مشمول في الحزم</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ADDITIONAL SERVICES -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">خدمات <span>إضافية</span></h2>
+    <div class="section-divider"></div>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon">🏥</div>
+        <h3>الرعاية البيطرية 24/7</h3>
+        <p>طبيب بيطري متوفر على مدار الساعة لمتابعة صحة كلبك. نقدم الفحص الدوري، إعطاء الأدوية وفق تعليمات الطبيب، المتابعة الصحية اليومية، والتدخل الطبي عند الضرورة.</p>
+        <p style="margin-top: 8px;"><span class="price-tag">مجاناً مع الإقامة</span></p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🚗</div>
+        <h3>خدمة التوصيل</h3>
+        <p>استلام وتسليم كلبك من وإلى منزلك. سيارات مجهزة بقفص مريح وآمن، سائق متدرب، وتحديثات لحظية عن الموقع خلال الرحلة.</p>
+        <p style="margin-top: 8px;"><span class="price-tag">من HK$80/رحلة</span></p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📷</div>
+        <h3>مراقبة وتحديثات</h3>
+        <p>نرسل لك صوراً وفيديوهات يومية لتطمئن على كلبك. تقارير يومية بالأكل والنوم والنشاط. إمكانية التواصل المباشر مع فريق الرعاية في أي وقت.</p>
+        <p style="margin-top: 8px;"><span class="price-tag">مشمول في الحزم المميزة</span></p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🎓</div>
+        <h3>التدريب الأساسي</h3>
+        <p>جلسات تدريب أساسية خلال فترة الإقامة: الأوامر الأساسية، تصحيح السلوكيات، التعود الاجتماعي مع الكلاب الأخرى. نتعاون مع مدرب متخصص معتمد دولياً.</p>
+        <p style="margin-top: 8px;"><span class="price-tag">HK$200/جلسة</span></p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🍖</div>
+        <h3>التغذية المتخصصة</h3>
+        <p>وجبات غذائية متوازنة مناسبة لعمر وحجم وحاجات كلبك الصحية. نتبع تعليمات طعامك الخاصة إذا كان يتبع نظاماً غذائياً محدداً. وجبات من مكونات طازجة وعالية الجودة.</p>
+        <p style="margin-top: 8px;"><span class="price-tag">مشمول في الإقامة</span></p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🛁</div>
+        <h3>السبا والعلاج</h3>
+        <p>جلسات تدليك مهدئة للكلاب القلقة أو المسنة، علاجات الأعشاب للشعر والجلد، حمامات الطين الطبيعية والبخار. تجربة سبا كاملة لكلبك المميز.</p>
+        <p style="margin-top: 8px;"><span class="price-tag">من HK$150/جلسة</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FACILITIES -->
+<section class="section section-green">
+  <div class="container">
+    <h2 class="section-title">مرافقنا <span>الداخلية والخارجية</span></h2>
+    <div class="section-divider"></div>
+    <div class="tabs-wrap">
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="indoor">المرافق الداخلية</button>
+        <button class="tab-btn" data-tab="outdoor">المرافق الخارجية</button>
+        <button class="tab-btn" data-tab="safety">الأمان والسلامة</button>
+      </div>
+      <div data-panel="indoor" class="tab-panel active">
+        <div class="cards-grid">
+          <div class="card">
+            <div class="card-icon">🎮</div>
+            <h3>حظيرة اللعب الداخلية</h3>
+            <p>مساحة واسعة مجهزة بألعاب متنوعة وأدوات تحفيز عقلي. تحت إشراف مستمر ومكيفة بدرجة حرارة مناسبة طوال العام.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🛌</div>
+            <h3>غرف الاسترخاء</h3>
+            <p>غرف هادئة للكلاب الحساسة أو كبيرة السن تحتاج إلى مزيد من الراحة والهدوء. موسيقى هادئة ومضادة للقلق.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🍽️</div>
+            <h3>غرفة الطعام</h3>
+            <p>مساحة نظيفة ومخصصة لتناول الطعام بهدوء. كل كلب لديه مكانه الخاص ووجباته المحددة.</p>
+          </div>
+        </div>
+      </div>
+      <div data-panel="outdoor" class="tab-panel">
+        <div class="cards-grid">
+          <div class="card">
+            <div class="card-icon">🌳</div>
+            <h3>المراعي الخضراء</h3>
+            <p>مساحات عشبية طبيعية آمنة ومسوّرة بشكل كامل. مثالية للجري والاستكشاف والتفاعل الاجتماعي بين الكلاب.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🏖️</div>
+            <h3>منطقة الرمال</h3>
+            <p>رمال نظيفة للكلاب التي تحب الحفر والاستكشاف. ترفيه طبيعي يحاكي بيئتهم الطبيعية ويحفزهم جسدياً.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🌲</div>
+            <h3>مسارات الغابة</h3>
+            <p>مسارات طبيعية في المحمية الطبيعية القريبة. تجربة ترفيهية وتمرين ممتع يحاكي السلوك الطبيعي للكلاب.</p>
+          </div>
+        </div>
+      </div>
+      <div data-panel="safety" class="tab-panel">
+        <div class="cards-grid">
+          <div class="card">
+            <div class="card-icon">📹</div>
+            <h3>كاميرات المراقبة</h3>
+            <p>كاميرات عالية الدقة في جميع أنحاء المرفق تعمل 24/7. تسجيل مستمر وإمكانية مشاهدة بعض اللقطات عند الطلب.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🔐</div>
+            <h3>نظام البوابات الآمن</h3>
+            <p>بوابات متعددة بأقفال ذكية تمنع الهروب أو الدخول غير المصرح به. كل مدخل يتطلب مصادقة من الموظفين.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🚨</div>
+            <h3>بروتوكول الطوارئ</h3>
+            <p>خطة طوارئ واضحة لجميع الحالات المحتملة. تواصل فوري مع صاحب الكلب عند أي حادثة أو تطور صحي.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="text-align:center; background: var(--brown-dark); color: var(--cream);">
+  <div class="container">
+    <h2 style="color: var(--green-light); margin-bottom: 12px;">جاهز لتجربة خدماتنا؟</h2>
+    <p style="color: var(--cream-dark); margin-bottom: 25px;">احجز إقامة اليوم واكتشف لماذا نحن الخيار الأول لأكثر من 200 عائلة في هونغ كونغ</p>
+    <a href="booking.html" class="btn btn-primary">احجز الآن</a>
+    <a href="packages.html" class="btn btn-secondary" style="margin-right: 10px;">اعرف حزمنا وأسعارنا</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>🐾 دلّل حيوانك | Dalel</h4>
+      <p data-key="footer_about">فندق رعاية متخصص للحيوانات الأليفة في هونغ كونغ.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-key="footer_links">روابط سريعة</h4>
+      <a href="../index.html" data-key="nav_home">الرئيسية</a>
+      <a href="about.html" data-key="nav_about">من نحن</a>
+      <a href="services.html" data-key="nav_services">الخدمات</a>
+      <a href="packages.html" data-key="nav_packages">الحزم</a>
+      <a href="booking.html" data-key="nav_booking">احجز الآن</a>
+    </div>
+    <div class="footer-col">
+      <h4>المزيد</h4>
+      <a href="reviews.html">آراء العملاء</a>
+      <a href="contact.html">تواصل معنا</a>
+      <a href="rating.html">قيّمنا</a>
+    </div>
+    <div class="footer-col">
+      <h4>تواصل معنا</h4>
+      <p>📍 وان تشاي، هونغ كونغ</p>
+      <p>📞 +852 1234 5678</p>
+      <p>✉️ hello@dalel-hk.com</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p data-key="footer_copy">© 2025 دلّل حيوانك | Dalel - جميع الحقوق محفوظة</p>
+  </div>
+</footer>
+
+<script src="../JS/main.js"></script>
+</body>
+</html>

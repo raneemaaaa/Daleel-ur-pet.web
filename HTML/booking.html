@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="دلّل حيوانك - Dalel | احجز إقامة لكلبك في أفضل فندق رعاية حيوانات في هونغ كونغ" />
+  <title>دلّل حيوانك - Dalel | احجز الآن</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/style.css" />
+</head>
+<body>
+
+<a href="#main" class="skip-link">انتقل للمحتوى الرئيسي</a>
+
+<div class="a11y-panel" id="a11yPanel">
+  <h4 data-key="a11y_title">إمكانية الوصول</h4>
+  <div class="a11y-option">
+    <span data-key="a11y_contrast">تباين عالي</span>
+    <label class="toggle-switch"><input type="checkbox" id="toggleContrast"><label for="toggleContrast"></label></label>
+  </div>
+  <div class="a11y-option">
+    <span data-key="a11y_dyslexic">خط للقراءة</span>
+    <label class="toggle-switch"><input type="checkbox" id="toggleDyslexic"><label for="toggleDyslexic"></label></label>
+  </div>
+  <div class="a11y-option">
+    <span data-key="a11y_underline">تسطير الروابط</span>
+    <label class="toggle-switch"><input type="checkbox" id="toggleUnderline"><label for="toggleUnderline"></label></label>
+  </div>
+</div>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <div class="navbar-logo">
+      <a href="../index.html">🐾 <span>دلّل</span> حيوانك</a>
+    </div>
+    <ul class="navbar-links" id="navLinks">
+      <li><a href="../index.html" data-key="nav_home">الرئيسية</a></li>
+      <li><a href="about.html" data-key="nav_about">من نحن</a></li>
+      <li><a href="services.html" data-key="nav_services">الخدمات</a></li>
+      <li><a href="packages.html" data-key="nav_packages">الحزم</a></li>
+      <li><a href="booking.html" class="active" data-key="nav_booking">احجز الآن</a></li>
+      <li><a href="reviews.html" data-key="nav_reviews">آراء العملاء</a></li>
+      <li><a href="contact.html" data-key="nav_contact">تواصل معنا</a></li>
+      <li><a href="rating.html" data-key="nav_rating">قيّمنا</a></li>
+    </ul>
+    <div class="navbar-controls">
+      <div class="font-controls">
+        <button class="font-btn" onclick="decreaseFontSize()">A-</button>
+        <button class="font-btn" onclick="increaseFontSize()">A+</button>
+      </div>
+      <button class="lang-btn" id="langBtn" onclick="toggleLanguage()">English</button>
+      <button class="a11y-btn" onclick="toggleA11yPanel()">♿</button>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+<div class="page-banner">
+  <h1 data-key="booking_title">احجز إقامة</h1>
+  <p data-key="booking_sub">احجز مكاناً مريحاً لحيوانك الأليف معنا</p>
+  <div class="breadcrumb">
+    <a href="../index.html">الرئيسية</a><span>›</span><span>الحجز</span>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <!-- STEPS -->
+    <div class="steps-bar">
+      <div class="step-item active">
+        <div class="step-num">1</div>
+        <span>معلومات الحجز</span>
+      </div>
+      <div class="step-sep">›</div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <span>التأكيد</span>
+      </div>
+      <div class="step-sep">›</div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <span>اكتمل الحجز</span>
+      </div>
+    </div>
+
+    <div class="contact-grid">
+      <!-- FORM -->
+      <div>
+        <div id="bookingAlert" class="alert alert-success">
+          ✅ تم استلام طلب الحجز بنجاح! سنتواصل معك خلال 24 ساعة لتأكيد الحجز.
+        </div>
+        <div id="bookingAlertErr" class="alert alert-error">
+          ❌ يوجد بعض الأخطاء في البيانات، يرجى التحقق من الحقول المطلوبة.
+        </div>
+
+        <div id="bookingSuccessMsg" style="display:none; text-align:center; padding: 30px; background: var(--green-pale); border-radius: 12px; margin-bottom: 20px;">
+          <div style="font-size: 3em; margin-bottom: 10px;">🎉</div>
+          <h3 style="color: var(--green-soft);">شكراً لك! تم الحجز بنجاح</h3>
+          <p style="color: var(--text-mid); margin-top: 8px;">سنتواصل معك على البريد الإلكتروني أو الهاتف خلال 24 ساعة لتأكيد الحجز.</p>
+          <a href="../index.html" class="btn btn-primary" style="margin-top: 15px;">العودة للرئيسية</a>
+        </div>
+
+        <form id="bookingForm" novalidate aria-label="نموذج الحجز">
+          <h3 style="color: var(--brown-dark); margin-bottom: 18px;">👤 معلومات المالك</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="bookName">الاسم الكامل *</label>
+              <input type="text" id="bookName" name="bookName" placeholder="مثال: أحمد تشان" autocomplete="name" />
+              <div class="form-error" id="bookName_err">هذا الحقل مطلوب</div>
+            </div>
+            <div class="form-group">
+              <label for="bookPhone">رقم الهاتف *</label>
+              <input type="tel" id="bookPhone" name="bookPhone" placeholder="+852 9999 8888" autocomplete="tel" />
+              <div class="form-error" id="bookPhone_err">أدخل رقم هاتف صحيح</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="bookEmail">البريد الإلكتروني *</label>
+            <input type="email" id="bookEmail" name="bookEmail" placeholder="example@email.com" autocomplete="email" />
+            <div class="form-error" id="bookEmail_err">أدخل بريد إلكتروني صحيح</div>
+          </div>
+
+          <div class="form-group">
+            <label for="bookAddress">عنوان المنزل (لخدمة التوصيل)</label>
+            <input type="text" id="bookAddress" name="bookAddress" placeholder="الشارع، المنطقة، هونغ كونغ" autocomplete="street-address" />
+          </div>
+
+          <hr style="border: none; border-top: 1px solid var(--border); margin: 20px 0;">
+          <h3 style="color: var(--brown-dark); margin-bottom: 18px;">🐾 معلومات الكلب</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="bookDog">اسم الكلب *</label>
+              <input type="text" id="bookDog" name="bookDog" placeholder="مثال: ماكس" />
+              <div class="form-error" id="bookDog_err">هذا الحقل مطلوب</div>
+            </div>
+            <div class="form-group">
+              <label for="bookBreed">السلالة *</label>
+              <input type="text" id="bookBreed" name="bookBreed" placeholder="مثال: لابرادور" />
+              <div class="form-error" id="bookBreed_err">هذا الحقل مطلوب</div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="bookAge">العمر</label>
+              <select id="bookAge" name="bookAge">
+                <option value="">اختر العمر</option>
+                <option>أقل من سنة</option>
+                <option>1-3 سنوات</option>
+                <option>3-7 سنوات</option>
+                <option>7+ سنوات</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="bookSize">الحجم</label>
+              <select id="bookSize" name="bookSize">
+                <option value="">اختر الحجم</option>
+                <option>صغير (أقل من 10 كغ)</option>
+                <option>متوسط (10-25 كغ)</option>
+                <option>كبير (أكثر من 25 كغ)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="bookHealth">ملاحظات صحية أو سلوكية</label>
+            <textarea id="bookHealth" name="bookHealth" rows="3" placeholder="مثال: يأخذ دواء يومياً، حساس من بعض الطعام، خجول مع الكلاب الأخرى..."></textarea>
+          </div>
+
+          <hr style="border: none; border-top: 1px solid var(--border); margin: 20px 0;">
+          <h3 style="color: var(--brown-dark); margin-bottom: 18px;">📅 تفاصيل الحجز</h3>
+
+          <div class="form-group">
+            <label for="bookPackage">الحزمة المطلوبة *</label>
+            <select id="bookPackage" name="bookPackage">
+              <option value="">اختر الحزمة</option>
+              <option>حزمة اليوم - HK$180/يوم</option>
+              <option>الحزمة الكلاسيكية - HK$280/يوم</option>
+              <option>الحزمة المميزة - HK$420/يوم</option>
+              <option>حزمة مخصصة (سيتم التواصل)</option>
+            </select>
+            <div class="form-error" id="bookPackage_err">يرجى اختيار الحزمة</div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="bookCheckIn">تاريخ الوصول *</label>
+              <input type="date" id="bookCheckIn" name="bookCheckIn" />
+              <div class="form-error" id="bookCheckIn_err">حدد تاريخ الوصول</div>
+            </div>
+            <div class="form-group">
+              <label for="bookCheckOut">تاريخ المغادرة *</label>
+              <input type="date" id="bookCheckOut" name="bookCheckOut" />
+              <div class="form-error" id="bookCheckOut_err">حدد تاريخ المغادرة</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>خدمات إضافية (اختياري)</label>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px;">
+              <label style="display: flex; align-items: center; gap: 6px; font-weight: normal; cursor: pointer;">
+                <input type="checkbox" name="extras" value="delivery"> خدمة التوصيل (+HK$80)
+              </label>
+              <label style="display: flex; align-items: center; gap: 6px; font-weight: normal; cursor: pointer;">
+                <input type="checkbox" name="extras" value="grooming"> جلسة سبا (+HK$150)
+              </label>
+              <label style="display: flex; align-items: center; gap: 6px; font-weight: normal; cursor: pointer;">
+                <input type="checkbox" name="extras" value="training"> جلسة تدريب (+HK$200)
+              </label>
+              <label style="display: flex; align-items: center; gap: 6px; font-weight: normal; cursor: pointer;">
+                <input type="checkbox" name="extras" value="updates"> تحديثات يومية (+HK$30)
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="bookNotes">ملاحظات إضافية</label>
+            <textarea id="bookNotes" name="bookNotes" rows="3" placeholder="أي تعليمات خاصة أو طلبات إضافية..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.05em; padding: 14px;">
+            🐾 تأكيد طلب الحجز
+          </button>
+          <p style="text-align: center; font-size: 0.82em; color: var(--text-light); margin-top: 10px;">
+            * سيتم التواصل معك خلال 24 ساعة لتأكيد الحجز ومناقشة التفاصيل
+          </p>
+        </form>
+      </div>
+
+      <!-- INFO SIDEBAR -->
+      <div>
+        <div class="card" style="margin-bottom: 20px;">
+          <div class="card-icon">📋</div>
+          <h3>معلومات مهمة قبل الحجز</h3>
+          <ul style="list-style: none; margin-top: 10px;">
+            <li style="padding: 5px 0; color: var(--text-mid); font-size: 0.88em; border-bottom: 1px solid var(--border);">✅ يجب أن يكون الكلب محصناً بالكامل</li>
+            <li style="padding: 5px 0; color: var(--text-mid); font-size: 0.88em; border-bottom: 1px solid var(--border);">✅ شهادة صحة بيطرية حديثة (أقل من 3 أشهر)</li>
+            <li style="padding: 5px 0; color: var(--text-mid); font-size: 0.88em; border-bottom: 1px solid var(--border);">✅ خالٍ من البراغيث والقراد</li>
+            <li style="padding: 5px 0; color: var(--text-mid); font-size: 0.88em; border-bottom: 1px solid var(--border);">✅ الحجز يصبح نهائياً بعد الدفع الجزئي</li>
+            <li style="padding: 5px 0; color: var(--text-mid); font-size: 0.88em;">✅ يمكن إلغاء الحجز قبل 48 ساعة</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-bottom: 20px;">
+          <div class="card-icon">💰</div>
+          <h3>الأسعار السريعة</h3>
+          <ul style="list-style: none; margin-top: 10px;">
+            <li style="padding: 5px 0; color: var(--text-mid); font-size: 0.88em; display: flex; justify-content: space-between; border-bottom: 1px solid var(--border);">
+              <span>حزمة اليوم</span><span class="price-tag">HK$180/يوم</span>
+            </li>
+            <li style="padding: 5px 0; color: var(--text-mid); font-size: 0.88em; display: flex; justify-content: space-between; border-bottom: 1px solid var(--border);">
+              <span>الحزمة الكلاسيكية</span><span class="price-tag">HK$280/يوم</span>
+            </li>
+            <li style="padding: 5px 0; color: var(--text-mid); font-size: 0.88em; display: flex; justify-content: space-between;">
+              <span>الحزمة المميزة</span><span class="price-tag">HK$420/يوم</span>
+            </li>
+          </ul>
+          <a href="packages.html" style="font-size: 0.85em; color: var(--green-soft); text-decoration: none; display: block; margin-top: 10px;">← اعرف تفاصيل الحزم</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">📞</div>
+          <h3>تواصل معنا مباشرة</h3>
+          <p style="color: var(--text-mid); font-size: 0.88em; margin-bottom: 10px;">هل لديك استفسار قبل الحجز؟</p>
+          <p style="color: var(--text-mid); font-size: 0.88em;">📞 +852 1234 5678</p>
+          <p style="color: var(--text-mid); font-size: 0.88em;">💬 واتساب: +852 9999 8888</p>
+          <p style="color: var(--text-mid); font-size: 0.88em;">✉️ hello@dalel-hk.com</p>
+          <p style="color: var(--text-light); font-size: 0.8em; margin-top: 8px;">يومياً 8:00 ص - 10:00 م</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>🐾 دلّل حيوانك | Dalel</h4>
+      <p>فندق رعاية متخصص للحيوانات الأليفة في هونغ كونغ.</p>
+    </div>
+    <div class="footer-col">
+      <h4>روابط سريعة</h4>
+      <a href="../index.html">الرئيسية</a>
+      <a href="about.html">من نحن</a>
+      <a href="services.html">الخدمات</a>
+      <a href="packages.html">الحزم</a>
+      <a href="booking.html">احجز الآن</a>
+    </div>
+    <div class="footer-col">
+      <h4>المزيد</h4>
+      <a href="reviews.html">آراء العملاء</a>
+      <a href="contact.html">تواصل معنا</a>
+      <a href="rating.html">قيّمنا</a>
+    </div>
+    <div class="footer-col">
+      <h4>تواصل معنا</h4>
+      <p>📍 وان تشاي، هونغ كونغ</p>
+      <p>📞 +852 1234 5678</p>
+      <p>✉️ hello@dalel-hk.com</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p data-key="footer_copy">© 2025 دلّل حيوانك | Dalel - جميع الحقوق محفوظة</p>
+  </div>
+</footer>
+
+<script src="../JS/main.js"></script>
+</body>
+</html>

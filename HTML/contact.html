@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="دلّل حيوانك - Dalel | تواصل معنا - هونغ كونغ، وان تشاي" />
+  <title>دلّل حيوانك - Dalel | تواصل معنا</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/style.css" />
+</head>
+<body>
+
+<a href="#main" class="skip-link">انتقل للمحتوى الرئيسي</a>
+
+<div class="a11y-panel" id="a11yPanel">
+  <h4 data-key="a11y_title">إمكانية الوصول</h4>
+  <div class="a11y-option">
+    <span data-key="a11y_contrast">تباين عالي</span>
+    <label class="toggle-switch"><input type="checkbox" id="toggleContrast"><label for="toggleContrast"></label></label>
+  </div>
+  <div class="a11y-option">
+    <span data-key="a11y_dyslexic">خط للقراءة</span>
+    <label class="toggle-switch"><input type="checkbox" id="toggleDyslexic"><label for="toggleDyslexic"></label></label>
+  </div>
+  <div class="a11y-option">
+    <span data-key="a11y_underline">تسطير الروابط</span>
+    <label class="toggle-switch"><input type="checkbox" id="toggleUnderline"><label for="toggleUnderline"></label></label>
+  </div>
+</div>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <div class="navbar-logo">
+      <a href="../index.html">🐾 <span>دلّل</span> حيوانك</a>
+    </div>
+    <ul class="navbar-links" id="navLinks">
+      <li><a href="../index.html" data-key="nav_home">الرئيسية</a></li>
+      <li><a href="about.html" data-key="nav_about">من نحن</a></li>
+      <li><a href="services.html" data-key="nav_services">الخدمات</a></li>
+      <li><a href="packages.html" data-key="nav_packages">الحزم</a></li>
+      <li><a href="booking.html" data-key="nav_booking">احجز الآن</a></li>
+      <li><a href="reviews.html" data-key="nav_reviews">آراء العملاء</a></li>
+      <li><a href="contact.html" class="active" data-key="nav_contact">تواصل معنا</a></li>
+      <li><a href="rating.html" data-key="nav_rating">قيّمنا</a></li>
+    </ul>
+    <div class="navbar-controls">
+      <div class="font-controls">
+        <button class="font-btn" onclick="decreaseFontSize()">A-</button>
+        <button class="font-btn" onclick="increaseFontSize()">A+</button>
+      </div>
+      <button class="lang-btn" id="langBtn" onclick="toggleLanguage()">English</button>
+      <button class="a11y-btn" onclick="toggleA11yPanel()">♿</button>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+<div class="page-banner">
+  <h1 data-key="contact_title">تواصل معنا</h1>
+  <p data-key="contact_sub">نحن هنا للإجابة على جميع استفساراتك</p>
+  <div class="breadcrumb">
+    <a href="../index.html">الرئيسية</a><span>›</span><span>تواصل معنا</span>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- CONTACT FORM -->
+      <div>
+        <h2 style="color: var(--brown-dark); margin-bottom: 20px;">أرسل لنا رسالة</h2>
+
+        <div id="contactAlert" class="alert alert-success">
+          ✅ تم إرسال رسالتك بنجاح! سنتواصل معك في أقرب وقت ممكن، وعادةً خلال 24 ساعة.
+        </div>
+        <div id="contactAlertErr" class="alert alert-error">
+          ❌ يوجد خطأ في بعض الحقول، يرجى التحقق والمحاولة مجدداً.
+        </div>
+
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">الاسم الكامل *</label>
+              <input type="text" id="contactName" placeholder="اسمك الكامل" autocomplete="name" />
+              <div class="form-error" id="contactName_err">الاسم مطلوب</div>
+            </div>
+            <div class="form-group">
+              <label for="contactPhone">رقم الهاتف</label>
+              <input type="tel" id="contactPhone" placeholder="+852 9999 8888" autocomplete="tel" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="contactEmail">البريد الإلكتروني *</label>
+            <input type="email" id="contactEmail" placeholder="example@email.com" autocomplete="email" />
+            <div class="form-error" id="contactEmail_err">أدخل بريد إلكتروني صحيح</div>
+          </div>
+
+          <div class="form-group">
+            <label for="contactSubject">الموضوع</label>
+            <select id="contactSubject">
+              <option value="">اختر موضوع الرسالة</option>
+              <option>استفسار عن الحجز</option>
+              <option>معلومات عن الخدمات</option>
+              <option>معلومات عن الأسعار</option>
+              <option>شكوى أو اقتراح</option>
+              <option>شراكة أو تعاون</option>
+              <option>أخرى</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="contactMsg">رسالتك *</label>
+            <textarea id="contactMsg" rows="5" placeholder="اكتب رسالتك هنا... سواء كان استفساراً أو طلباً أو اقتراحاً فنحن نسعد بسماعك!"></textarea>
+            <div class="form-error" id="contactMsg_err">يرجى كتابة رسالتك</div>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%; font-size: 1.05em;">
+            📨 إرسال الرسالة
+          </button>
+        </form>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div>
+        <h2 style="color: var(--brown-dark); margin-bottom: 20px;">معلومات التواصل</h2>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📍</div>
+          <div class="contact-info-text">
+            <h4>العنوان</h4>
+            <p>الطابق الأول، 88 شارع النجم<br>وان تشاي، هونغ كونغ</p>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📞</div>
+          <div class="contact-info-text">
+            <h4>الهاتف</h4>
+            <p>+852 1234 5678</p>
+            <p style="font-size: 0.82em; color: var(--text-light);">يومياً: 8:00 ص - 10:00 م</p>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">💬</div>
+          <div class="contact-info-text">
+            <h4>واتساب</h4>
+            <p>+852 9999 8888</p>
+            <p style="font-size: 0.82em; color: var(--text-light);">للردود السريعة على الاستفسارات</p>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">✉️</div>
+          <div class="contact-info-text">
+            <h4>البريد الإلكتروني</h4>
+            <p>hello@dalel-hk.com</p>
+            <p style="font-size: 0.82em; color: var(--text-light);">نرد خلال 24 ساعة</p>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">🕐</div>
+          <div class="contact-info-text">
+            <h4>ساعات العمل</h4>
+            <p>الأحد - الخميس: 8:00 ص - 10:00 م</p>
+            <p>الجمعة - السبت: 8:00 ص - 11:00 م</p>
+            <p style="font-size: 0.82em; color: var(--text-light);">الخط الطبي البيطري: متاح 24/7</p>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="card" style="margin-top: 25px;">
+          <h3 style="margin-bottom: 12px;">❓ أسئلة شائعة</h3>
+          <details style="margin-bottom: 10px; cursor: pointer;">
+            <summary style="font-size: 0.9em; color: var(--brown-dark); font-weight: 600; padding: 5px 0;">كيف أحجز؟</summary>
+            <p style="font-size: 0.85em; color: var(--text-mid); margin-top: 5px; padding-right: 10px;">يمكنك الحجز عبر <a href="booking.html" style="color: var(--green-soft);">صفحة الحجز</a> أو التواصل معنا مباشرة عبر الهاتف.</p>
+          </details>
+          <details style="margin-bottom: 10px; cursor: pointer;">
+            <summary style="font-size: 0.9em; color: var(--brown-dark); font-weight: 600; padding: 5px 0;">ما هو الحد الأدنى للإقامة؟</summary>
+            <p style="font-size: 0.85em; color: var(--text-mid); margin-top: 5px; padding-right: 10px;">يوم واحد لحزمة اليوم، ومن يومين للحزم الأخرى.</p>
+          </details>
+          <details style="margin-bottom: 10px; cursor: pointer;">
+            <summary style="font-size: 0.9em; color: var(--brown-dark); font-weight: 600; padding: 5px 0;">هل تقبلون جميع أنواع الكلاب؟</summary>
+            <p style="font-size: 0.85em; color: var(--text-mid); margin-top: 5px; padding-right: 10px;">نعم! نقبل جميع السلالات والأحجام مع توفر متطلبات التحصين.</p>
+          </details>
+          <details style="cursor: pointer;">
+            <summary style="font-size: 0.9em; color: var(--brown-dark); font-weight: 600; padding: 5px 0;">ما هي سياسة الإلغاء؟</summary>
+            <p style="font-size: 0.85em; color: var(--text-mid); margin-top: 5px; padding-right: 10px;">يمكن الإلغاء مجاناً قبل 48 ساعة من موعد الوصول.</p>
+          </details>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- MAP -->
+    <div style="margin-top: 40px;">
+      <h3 style="color: var(--brown-dark); margin-bottom: 15px;">📍 موقعنا</h3>
+      <div class="map-wrapper" style="height: 350px; background: var(--cream-dark); display:flex; align-items:center; justify-content:center;">
+        <div style="text-align:center;">
+          <div style="font-size: 3em; margin-bottom: 10px;">🗺️</div>
+          <p style="color: var(--text-mid);"><strong>دلّل حيوانك | Dalel</strong></p>
+          <p style="font-size:0.88em; color: var(--text-mid);">وان تشاي، هونغ كونغ</p>
+          <p style="font-size: 0.78em; color: var(--text-light); margin: 8px 0;">(خريطة GPS - تحسين مستقبلي قادم)</p>
+          <a href="https://maps.google.com/?q=Wan+Chai+Hong+Kong" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:0.85em;">افتح في خرائط Google</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>🐾 دلّل حيوانك | Dalel</h4>
+      <p>فندق رعاية متخصص للحيوانات الأليفة في هونغ كونغ.</p>
+    </div>
+    <div class="footer-col">
+      <h4>روابط سريعة</h4>
+      <a href="../index.html">الرئيسية</a>
+      <a href="about.html">من نحن</a>
+      <a href="services.html">الخدمات</a>
+      <a href="packages.html">الحزم</a>
+      <a href="booking.html">احجز الآن</a>
+    </div>
+    <div class="footer-col">
+      <h4>المزيد</h4>
+      <a href="reviews.html">آراء العملاء</a>
+      <a href="contact.html">تواصل معنا</a>
+      <a href="rating.html">قيّمنا</a>
+    </div>
+    <div class="footer-col">
+      <h4>تواصل معنا</h4>
+      <p>📍 وان تشاي، هونغ كونغ</p>
+      <p>📞 +852 1234 5678</p>
+      <p>✉️ hello@dalel-hk.com</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p data-key="footer_copy">© 2025 دلّل حيوانك | Dalel - جميع الحقوق محفوظة</p>
+  </div>
+</footer>
+
+<script src="../JS/main.js"></script>
+</body>
+</html>

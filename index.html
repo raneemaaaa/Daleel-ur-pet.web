@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="دلّل حيوانك - Dalel | فندق رعاية الحيوانات الأليفة الأول في هونغ كونغ. خدمات إقامة وتمريض وعناية متكاملة لكلبك." />
+  <meta name="keywords" content="دلّل حيوانك, فندق كلاب, رعاية حيوانات, هونغ كونغ, Dalel, dog hotel, pet care" />
+  <meta property="og:title" content="دلّل حيوانك - Dalel | فندق رعاية الكلاب" />
+  <meta property="og:description" content="أفضل خدمات رعاية الحيوانات الأليفة في هونغ كونغ" />
+  <title>دلّل حيوانك - Dalel | الرئيسية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
+
+<!-- Skip Link -->
+<a href="#main" class="skip-link">انتقل للمحتوى الرئيسي</a>
+
+<!-- Accessibility Panel -->
+<div class="a11y-panel" id="a11yPanel" role="dialog" aria-label="إعدادات إمكانية الوصول">
+  <h4 data-key="a11y_title">إمكانية الوصول</h4>
+  <div class="a11y-option">
+    <span data-key="a11y_contrast">تباين عالي</span>
+    <label class="toggle-switch"><input type="checkbox" id="toggleContrast"><label for="toggleContrast"></label></label>
+  </div>
+  <div class="a11y-option">
+    <span data-key="a11y_dyslexic">خط للقراءة</span>
+    <label class="toggle-switch"><input type="checkbox" id="toggleDyslexic"><label for="toggleDyslexic"></label></label>
+  </div>
+  <div class="a11y-option">
+    <span data-key="a11y_underline">تسطير الروابط</span>
+    <label class="toggle-switch"><input type="checkbox" id="toggleUnderline"><label for="toggleUnderline"></label></label>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" role="navigation" aria-label="القائمة الرئيسية">
+  <div class="navbar-inner">
+    <div class="navbar-logo">
+      <a href="index.html" aria-label="الرئيسية - دلّل حيوانك">🐾 <span>دلّل</span> حيوانك</a>
+    </div>
+    <ul class="navbar-links" id="navLinks" role="menubar">
+      <li role="none"><a href="index.html" role="menuitem" data-key="nav_home">الرئيسية</a></li>
+      <li role="none"><a href="HTML/about.html" role="menuitem" data-key="nav_about">من نحن</a></li>
+      <li role="none"><a href="HTML/services.html" role="menuitem" data-key="nav_services">الخدمات</a></li>
+      <li role="none"><a href="HTML/packages.html" role="menuitem" data-key="nav_packages">الحزم</a></li>
+      <li role="none"><a href="HTML/booking.html" role="menuitem" data-key="nav_booking">احجز الآن</a></li>
+      <li role="none"><a href="HTML/reviews.html" role="menuitem" data-key="nav_reviews">آراء العملاء</a></li>
+      <li role="none"><a href="HTML/contact.html" role="menuitem" data-key="nav_contact">تواصل معنا</a></li>
+      <li role="none"><a href="HTML/rating.html" role="menuitem" data-key="nav_rating">قيّمنا</a></li>
+    </ul>
+    <div class="navbar-controls">
+      <div class="font-controls">
+        <button class="font-btn" onclick="decreaseFontSize()" aria-label="تصغير الخط" title="تصغير">A-</button>
+        <button class="font-btn" onclick="increaseFontSize()" aria-label="تكبير الخط" title="تكبير">A+</button>
+      </div>
+      <button class="lang-btn" id="langBtn" onclick="toggleLanguage()" aria-label="تغيير اللغة">English</button>
+      <button class="a11y-btn" onclick="toggleA11yPanel()" aria-label="إمكانية الوصول" title="إمكانية الوصول">♿</button>
+      <button class="hamburger" id="hamburger" aria-label="القائمة" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- MAIN -->
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" aria-label="القسم الرئيسي">
+  <div class="container">
+    <p style="color: var(--green-light); font-size: 0.9em; margin-bottom: 8px;">🏆 الأفضل في هونغ كونغ</p>
+    <h1 class="hero-title">
+      <span data-key="hero_title">فندق رعاية الحيوانات الأليفة الأول</span><br>
+      <a href="index.html" class="brand" style="color: var(--green-light); text-decoration: none;" data-key="hero_brand">دلّل حيوانك</a>
+    </h1>
+    <p class="hero-subtitle" data-key="hero_sub">نرعى حيوانك الأليف كما نرعى أفراد عائلتنا. أفضل خدمات الإقامة والرعاية في هونغ كونغ</p>
+    <div>
+      <a href="HTML/booking.html" class="btn btn-primary" data-key="hero_btn1">احجز الآن</a>
+      <a href="HTML/about.html" class="btn btn-secondary" data-key="hero_btn2">اعرف أكثر</a>
+    </div>
+    <div style="margin-top: 25px; font-size: 0.85em; color: var(--cream-dark);">
+      🐕 كلاب سعيدة كل يوم &nbsp;|&nbsp; 🏥 طبيب بيطري 24/7 &nbsp;|&nbsp; 📍 هونغ كونغ
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section section-alt" aria-label="إحصائياتنا">
+  <div class="container">
+    <div class="stats-row">
+      <div class="stat-item">
+        <div class="stat-num" data-key="stat1_num">+500</div>
+        <div class="stat-label" data-key="stat1_label">حيوان أليف سعيد</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-key="stat2_num">+200</div>
+        <div class="stat-label" data-key="stat2_label">عميل موثوق</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-key="stat3_num">24/7</div>
+        <div class="stat-label" data-key="stat3_label">رعاية بيطرية</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-key="stat4_num">5★</div>
+        <div class="stat-label" data-key="stat4_label">تقييم عملائنا</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="section" aria-labelledby="whyTitle">
+  <div class="container">
+    <h2 class="section-title" id="whyTitle">لماذا <span>دلّل حيوانك؟</span></h2>
+    <div class="section-divider"></div>
+    <p class="section-desc">نحن لسنا مجرد فندق للكلاب، نحن عائلة تهتم بعائلتك الصغيرة. نوفر بيئة آمنة ودافئة ومليئة بالحب لكل حيوان يزورنا.</p>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon">🏠</div>
+        <h3>غرف مريحة ودافئة</h3>
+        <p>غرف مجهزة بتدفئة وتبريد أرضي مع تلفزيون لمشاهدة برامج مخصصة للكلاب. كل غرفة مصممة لتوفير أقصى قدر من الراحة والدفء لحيوانك الأليف.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🏥</div>
+        <h3>رعاية بيطرية على مدار الساعة</h3>
+        <p>فريق بيطري متخصص متاح 24 ساعة في اليوم، 7 أيام في الأسبوع. راحة بالك مضمونة مع وجود أطباء ومساعدين بيطريين لمتابعة صحة حيوانك.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🌿</div>
+        <h3>مراعي خارجية آمنة</h3>
+        <p>مساحات خضراء خارجية محاطة بأسوار أمان عالية، تضمن حرية الحركة والاستكشاف بدون أي مخاطر. مثالية لكلابك التي تحب الهواء الطلق.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📷</div>
+        <h3>مراقبة وتحديثات يومية</h3>
+        <p>نرسل لك صوراً وفيديوهات يومية لتطمئن على كلبك. كاميرات مراقبة في كل مكان وإمكانية التواصل معنا في أي وقت عبر الهاتف أو الواتساب.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">✂️</div>
+        <h3>صالة حلاقة ومنتجع</h3>
+        <p>خدمات العناية بالشكل الكامل: استحمام، حلاقة، تشذيب، تنظيف الأذنين والأظافر. يغادر كلبك مهندماً ورائحته جميلة!</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🚗</div>
+        <h3>خدمة التوصيل من وإلى</h3>
+        <p>لا تقلق بشأن النقل! نوفر خدمة استلام وتسليم من باب منزلك إلى بابنا بسيارات مجهزة خصيصاً لنقل الحيوانات بأمان وراحة تامة.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES PREVIEW -->
+<section class="section section-green" aria-labelledby="packTitle">
+  <div class="container">
+    <h2 class="section-title" id="packTitle">حزمنا <span>المميزة</span></h2>
+    <div class="section-divider"></div>
+    <p class="section-desc">اختر الحزمة المناسبة لاحتياجات كلبك وميزانيتك. لدينا خيارات لجميع الأذواق والمتطلبات.</p>
+    <div class="packages-grid">
+
+      <div class="package-card">
+        <div class="package-header">
+          <div style="font-size: 1.8em; margin-bottom: 5px;">🌙</div>
+          <h3>حزمة اليوم</h3>
+          <p style="font-size:0.85em; color:var(--cream-dark); margin-top:5px;">مثالية للإقامة القصيرة</p>
+          <div class="package-price">HK$180 <span>/ يوم</span></div>
+        </div>
+        <div class="package-body">
+          <ul class="package-features">
+            <li>تمشية مرتين يومياً</li>
+            <li>منطقة لعب خارجية</li>
+            <li>مسار الرشاقة والتمرين</li>
+            <li>حفر حفرة في الرمال</li>
+            <li>غرفة مريحة دافئة</li>
+            <li>وجبات يومية منتظمة</li>
+          </ul>
+          <a href="HTML/booking.html" class="btn btn-primary" style="width:100%; text-align:center; display:block;">احجز هذه الحزمة</a>
+        </div>
+      </div>
+
+      <div class="package-card featured">
+        <div class="package-header">
+          <div style="font-size: 1.8em; margin-bottom: 5px;">⭐</div>
+          <h3>الحزمة الكلاسيكية</h3>
+          <p style="font-size:0.85em; margin-top:5px;">الأكثر طلباً</p>
+          <div class="package-price">HK$280 <span>/ يوم</span></div>
+        </div>
+        <div class="package-body">
+          <ul class="package-features">
+            <li>تمشية 3 مرات يومياً</li>
+            <li>حظيرة لعب داخلية</li>
+            <li>منطقة استرخاء خاصة</li>
+            <li>جلسة حلاقة وتنظيف</li>
+            <li>تحديثات للمالك</li>
+            <li>رعاية بيطرية أساسية</li>
+          </ul>
+          <a href="HTML/booking.html" class="btn btn-primary" style="width:100%; text-align:center; display:block; background: var(--brown-dark);">احجز هذه الحزمة</a>
+        </div>
+      </div>
+
+      <div class="package-card">
+        <div class="package-header">
+          <div style="font-size: 1.8em; margin-bottom: 5px;">👑</div>
+          <h3>الحزمة المميزة</h3>
+          <p style="font-size:0.85em; color:var(--cream-dark); margin-top:5px;">تجربة فاخرة ومريحة</p>
+          <div class="package-price">HK$420 <span>/ يوم</span></div>
+        </div>
+        <div class="package-body">
+          <ul class="package-features">
+            <li>تمشية 4 مرات وأنشطة يومية</li>
+            <li>مساحة عشب خاصة</li>
+            <li>صور وتحديثات يومية</li>
+            <li>مكافآت ومكافآت خاصة</li>
+            <li>رعاية بيطرية كاملة</li>
+            <li>خدمة التوصيل مجاناً</li>
+          </ul>
+          <a href="HTML/booking.html" class="btn btn-primary" style="width:100%; text-align:center; display:block;">احجز هذه الحزمة</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="text-center mt-20">
+      <a href="HTML/packages.html" class="btn btn-secondary" style="color: var(--brown-dark); border-color: var(--brown-mid);">عرض جميع الحزم والتفاصيل</a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY PREVIEW -->
+<section class="section section-alt" aria-labelledby="galleryTitle">
+  <div class="container">
+    <h2 class="section-title" id="galleryTitle">معرض <span>الصور</span></h2>
+    <div class="section-divider"></div>
+    <p class="section-desc">لحظات سعيدة من فندقنا. انظر كيف يقضي كلبك وقتاً رائعاً معنا!</p>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?auto=compress&cs=tinysrgb&w=400" alt="كلب سعيد في حديقتنا" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/2253275/pexels-photo-2253275.jpeg?auto=compress&cs=tinysrgb&w=400" alt="كلب يلعب في الحديقة" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/3361739/pexels-photo-3361739.jpeg?auto=compress&cs=tinysrgb&w=400" alt="جلسة العناية والحمام" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/1254140/pexels-photo-1254140.jpeg?auto=compress&cs=tinysrgb&w=400" alt="كلب مرتاح" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/2607544/pexels-photo-2607544.jpeg?auto=compress&cs=tinysrgb&w=400" alt="مرافق اللعب" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/1564506/pexels-photo-1564506.jpeg?auto=compress&cs=tinysrgb&w=400" alt="تمشية في الغابة" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS PREVIEW -->
+<section class="section" aria-labelledby="reviewsTitle">
+  <div class="container">
+    <h2 class="section-title" id="reviewsTitle">ماذا يقول <span>عملاؤنا</span></h2>
+    <div class="section-divider"></div>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"تجربة رائعة جداً! كلبي ماكس قضى أسبوعاً كاملاً هناك وعاد سعيداً ومهندماً. الفريق محترف جداً والتواصل ممتاز، كانوا يرسلون صور كل يوم."</p>
+        <div class="review-author">سارة لي - هونغ كونغ</div>
+        <div class="review-date">مارس 2025</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"الحمد لله وجدت هذا المكان! كلبتي تعاني من قلق الانفصال لكن الفريق تعامل معها باحترافية وحب شديدين. أنصح الجميع."</p>
+        <div class="review-author">أحمد تشان - كولون</div>
+        <div class="review-date">فبراير 2025</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★☆</div>
+        <p class="review-text">"خدمة ممتازة وأسعار معقولة مقارنة بجودة الخدمة المقدمة. البيئة نظيفة ومريحة وكلبي يعشق المكان."</p>
+        <div class="review-author">ميا وونغ - هونغ كونغ</div>
+        <div class="review-date">يناير 2025</div>
+      </div>
+    </div>
+    <div class="text-center mt-20">
+      <a href="HTML/reviews.html" class="btn btn-primary">اقرأ المزيد من الآراء</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section" style="background: linear-gradient(135deg, var(--brown-dark), var(--brown-mid)); color: var(--cream); text-align: center;">
+  <div class="container">
+    <div style="font-size: 3em; margin-bottom: 15px;">🐾</div>
+    <h2 style="font-size: 1.8em; margin-bottom: 12px; color: var(--green-light);">احجز مكاناً لكلبك الآن!</h2>
+    <p style="color: var(--cream-dark); max-width: 500px; margin: 0 auto 25px;">لا تتردد - احجز مكاناً مريحاً وآمناً لكلبك في <a href="index.html" style="color: var(--green-light); text-decoration: none; font-weight: bold;">دلّل حيوانك</a> واستمتع بوقتك بدون قلق!</p>
+    <a href="HTML/booking.html" class="btn btn-primary" style="font-size: 1.1em; padding: 14px 35px;">احجز الآن - مجاناً للتسجيل</a>
+    <p style="margin-top: 15px; font-size: 0.85em; color: var(--brown-light);">📞 +852 1234 5678 &nbsp;|&nbsp; ✉️ hello@dalel-hk.com</p>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>🐾 دلّل حيوانك | Dalel</h4>
+      <p data-key="footer_about">دلّل حيوانك هو فندق رعاية متخصص للحيوانات الأليفة في هونغ كونغ، نوفر أفضل الخدمات لأحبائك من الكلاب.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-key="footer_links">روابط سريعة</h4>
+      <a href="index.html" data-key="nav_home">الرئيسية</a>
+      <a href="HTML/about.html" data-key="nav_about">من نحن</a>
+      <a href="HTML/services.html" data-key="nav_services">الخدمات</a>
+      <a href="HTML/packages.html" data-key="nav_packages">الحزم والأسعار</a>
+      <a href="HTML/booking.html" data-key="nav_booking">احجز الآن</a>
+    </div>
+    <div class="footer-col">
+      <h4>المزيد</h4>
+      <a href="HTML/reviews.html" data-key="nav_reviews">آراء العملاء</a>
+      <a href="HTML/contact.html" data-key="nav_contact">تواصل معنا</a>
+      <a href="HTML/rating.html" data-key="nav_rating">قيّمنا</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-key="footer_contact">تواصل معنا</h4>
+      <p>📍 شارع النجم، وان تشاي، هونغ كونغ</p>
+      <p>📞 +852 1234 5678</p>
+      <p>✉️ hello@dalel-hk.com</p>
+      <p>🕐 يومياً: 8 صباحاً - 10 مساءً</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p data-key="footer_copy">© 2025 دلّل حيوانك | Dalel - جميع الحقوق محفوظة</p>
+  </div>
+</footer>
+
+<script src="JS/main.js"></script>
+</body>
+</html>

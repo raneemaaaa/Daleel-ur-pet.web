@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="دلّل حيوانك - Dalel | تعرف على قصتنا وفريقنا وقيمنا في رعاية الحيوانات الأليفة في هونغ كونغ" />
+  <title>دلّل حيوانك - Dalel | من نحن</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/style.css" />
+</head>
+<body>
+
+<a href="#main" class="skip-link">انتقل للمحتوى الرئيسي</a>
+
+<div class="a11y-panel" id="a11yPanel">
+  <h4 data-key="a11y_title">إمكانية الوصول</h4>
+  <div class="a11y-option">
+    <span data-key="a11y_contrast">تباين عالي</span>
+    <label class="toggle-switch"><input type="checkbox" id="toggleContrast"><label for="toggleContrast"></label></label>
+  </div>
+  <div class="a11y-option">
+    <span data-key="a11y_dyslexic">خط للقراءة</span>
+    <label class="toggle-switch"><input type="checkbox" id="toggleDyslexic"><label for="toggleDyslexic"></label></label>
+  </div>
+  <div class="a11y-option">
+    <span data-key="a11y_underline">تسطير الروابط</span>
+    <label class="toggle-switch"><input type="checkbox" id="toggleUnderline"><label for="toggleUnderline"></label></label>
+  </div>
+</div>
+
+<nav class="navbar" role="navigation">
+  <div class="navbar-inner">
+    <div class="navbar-logo">
+      <a href="../index.html">🐾 <span>دلّل</span> حيوانك</a>
+    </div>
+    <ul class="navbar-links" id="navLinks">
+      <li><a href="../index.html" data-key="nav_home">الرئيسية</a></li>
+      <li><a href="about.html" class="active" data-key="nav_about">من نحن</a></li>
+      <li><a href="services.html" data-key="nav_services">الخدمات</a></li>
+      <li><a href="packages.html" data-key="nav_packages">الحزم</a></li>
+      <li><a href="booking.html" data-key="nav_booking">احجز الآن</a></li>
+      <li><a href="reviews.html" data-key="nav_reviews">آراء العملاء</a></li>
+      <li><a href="contact.html" data-key="nav_contact">تواصل معنا</a></li>
+      <li><a href="rating.html" data-key="nav_rating">قيّمنا</a></li>
+    </ul>
+    <div class="navbar-controls">
+      <div class="font-controls">
+        <button class="font-btn" onclick="decreaseFontSize()">A-</button>
+        <button class="font-btn" onclick="increaseFontSize()">A+</button>
+      </div>
+      <button class="lang-btn" id="langBtn" onclick="toggleLanguage()">English</button>
+      <button class="a11y-btn" onclick="toggleA11yPanel()">♿</button>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+<div class="page-banner">
+  <h1 data-key="about_title">من نحن</h1>
+  <p data-key="about_sub">قصتنا وفريقنا وقيمنا</p>
+  <div class="breadcrumb">
+    <a href="../index.html">الرئيسية</a>
+    <span>›</span>
+    <span data-key="about_title">من نحن</span>
+  </div>
+</div>
+
+<!-- STORY -->
+<section class="section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-box">
+        <img src="https://images.pexels.com/photos/1870301/pexels-photo-1870301.jpeg?auto=compress&cs=tinysrgb&w=500" alt="فريق دلّل حيوانك" />
+      </div>
+      <div class="about-text">
+        <h2>قصة <span style="color: var(--green-soft);">دلّل حيوانك</span></h2>
+        <p>بدأت رحلتنا عام 2018 بحلم بسيط: إنشاء مكان يحب فيه الكلاب أن يكونوا. أسست <strong>مي لين وجورج تان</strong> هذا المكان الرائع بعد أن عانيا من صعوبة إيجاد رعاية موثوقة وعاطفية لكلبيهما خلال رحلات العمل.</p>
+        <p>انطلقنا من مساحة صغيرة في وان تشاي، وسرعان ما توسعنا بفضل ثقة عملائنا وحبهم. اليوم، نفخر بأننا نرعى أكثر من 500 كلب شهرياً في بيئة آمنة ومحبة ومصممة خصيصاً لاحتياجاتهم.</p>
+        <p>في <a href="../index.html" style="color: var(--green-soft); font-weight: bold;">دلّل حيوانك</a>، نؤمن بأن كل كلب يستحق أفضل رعاية ممكنة. لا نرى كلابكم كزبائن، بل كأفراد في عائلة كبيرة تمتد عبر هونغ كونغ وما وراءها.</p>
+        <a href="booking.html" class="btn btn-primary" style="margin-top: 10px;">احجز إقامة الآن</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">قيمنا <span>ومبادئنا</span></h2>
+    <div class="section-divider"></div>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon">💚</div>
+        <h3>الحب والعناية</h3>
+        <p>كل عضو في فريقنا يتشارك نفس الشغف بالكلاب والحيوانات. نعامل كل كلب باهتمام وحب كاملين، تماماً كما نعامل أحبائنا.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔒</div>
+        <h3>الأمان أولاً</h3>
+        <p>نطبق أعلى معايير السلامة في جميع أقسام المرفق. كاميرات مراقبة، أسوار متينة، وبروتوكولات طوارئ واضحة لضمان أمان حيوانك في كل لحظة.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🌱</div>
+        <h3>الاستدامة</h3>
+        <p>نستخدم منتجات صديقة للبيئة في تنظيف وتشغيل مرفقنا. نحن نهتم بكوكبنا بنفس قدر اهتمامنا بحيواناتنا.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📞</div>
+        <h3>التواصل الشفاف</h3>
+        <p>نؤمن بالشفافية الكاملة مع أصحاب الكلاب. نرسل تحديثات منتظمة وصادقة وإشعارات فورية في حالة أي تطور يخص حيوانك.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="section section-green">
+  <div class="container">
+    <h2 class="section-title">فريقنا <span>المتخصص</span></h2>
+    <div class="section-divider"></div>
+    <p class="section-desc">وراء كل تجربة رائعة فريق من المحترفين المتخصصين والمحبين للحيوانات.</p>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar">👩</div>
+        <h4>مي لين</h4>
+        <p>المديرة التنفيذية ومؤسسة مشاركة</p>
+        <p style="margin-top: 8px; font-size: 0.82em; color: var(--text-light);">خبرة 12 عاماً في تدريب الكلاب</p>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">👨</div>
+        <h4>جورج تان</h4>
+        <p>مدير العمليات ومؤسس مشارك</p>
+        <p style="margin-top: 8px; font-size: 0.82em; color: var(--text-light);">خبرة 10 سنوات في إدارة الرعاية البيطرية</p>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">👩‍⚕️</div>
+        <h4>د. ليلى وانغ</h4>
+        <p>الطبيبة البيطرية الرئيسية</p>
+        <p style="margin-top: 8px; font-size: 0.82em; color: var(--text-light);">بورد بيطري مع تخصص أمراض الكلاب</p>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">🧑</div>
+        <h4>كيفن تشيونغ</h4>
+        <p>مدرب كلاب محترف</p>
+        <p style="margin-top: 8px; font-size: 0.82em; color: var(--text-light);">شهادة دولية في التدريب السلوكي</p>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">👩‍🎨</div>
+        <h4>جيني لام</h4>
+        <p>مصففة شعر الكلاب المتخصصة</p>
+        <p style="margin-top: 8px; font-size: 0.82em; color: var(--text-light);">خبرة 8 سنوات في العناية التجميلية</p>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">🧑‍🤝‍🧑</div>
+        <h4>فريق الرعاية</h4>
+        <p>12 مشرف رعاية يومية</p>
+        <p style="margin-top: 8px; font-size: 0.82em; color: var(--text-light);">جميعهم حاصلون على تدريب متخصص</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">اعتماداتنا <span>وشهاداتنا</span></h2>
+    <div class="section-divider"></div>
+    <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+      <div class="card text-center">
+        <div class="card-icon">🏆</div>
+        <h3>أفضل فندق كلاب 2024</h3>
+        <p>جائزة HK Pet Care Excellence Award</p>
+      </div>
+      <div class="card text-center">
+        <div class="card-icon">📜</div>
+        <h3>شهادة HKSPCA</h3>
+        <p>معتمدون من جمعية حماية الحيوانات في هونغ كونغ</p>
+      </div>
+      <div class="card text-center">
+        <div class="card-icon">🌿</div>
+        <h3>علامة صديق للبيئة</h3>
+        <p>شهادة Eco-Friendly Business 2023</p>
+      </div>
+      <div class="card text-center">
+        <div class="card-icon">⭐</div>
+        <h3>4.9/5 على Google</h3>
+        <p>بناءً على أكثر من 350 تقييم حقيقي</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION PREVIEW -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">موقعنا <span>وعنواننا</span></h2>
+    <div class="section-divider"></div>
+    <div class="info-box">
+      📍 <strong>دلّل حيوانك - Dalel</strong><br>
+      الطابق الأول، 88 شارع النجم، وان تشاي، هونغ كونغ<br>
+      ساعات العمل: يومياً من الساعة 8:00 صباحاً حتى 10:00 مساءً<br>
+      📞 +852 1234 5678 | ✉️ hello@dalel-hk.com
+    </div>
+    <div class="map-wrapper" style="height: 350px; background: var(--cream-dark); display:flex; align-items:center; justify-content:center; font-size:1em; color: var(--text-mid);">
+      <div style="text-align:center;">
+        <div style="font-size: 3em; margin-bottom: 10px;">🗺️</div>
+        <p><strong>موقعنا على الخريطة</strong></p>
+        <p style="font-size: 0.85em;">وان تشاي، هونغ كونغ</p>
+        <p style="font-size: 0.78em; color: var(--text-light); margin-top: 10px;">(خريطة GPS - تحسين مستقبلي)</p>
+        <a href="https://maps.google.com/?q=Wan+Chai+Hong+Kong" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top: 12px; font-size: 0.85em;">افتح في خرائط Google</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>🐾 دلّل حيوانك | Dalel</h4>
+      <p data-key="footer_about">دلّل حيوانك هو فندق رعاية متخصص للحيوانات الأليفة في هونغ كونغ.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-key="footer_links">روابط سريعة</h4>
+      <a href="../index.html" data-key="nav_home">الرئيسية</a>
+      <a href="about.html" data-key="nav_about">من نحن</a>
+      <a href="services.html" data-key="nav_services">الخدمات</a>
+      <a href="packages.html" data-key="nav_packages">الحزم</a>
+      <a href="booking.html" data-key="nav_booking">احجز الآن</a>
+    </div>
+    <div class="footer-col">
+      <h4>المزيد</h4>
+      <a href="reviews.html">آراء العملاء</a>
+      <a href="contact.html">تواصل معنا</a>
+      <a href="rating.html">قيّمنا</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-key="footer_contact">تواصل معنا</h4>
+      <p>📍 وان تشاي، هونغ كونغ</p>
+      <p>📞 +852 1234 5678</p>
+      <p>✉️ hello@dalel-hk.com</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p data-key="footer_copy">© 2025 دلّل حيوانك | Dalel - جميع الحقوق محفوظة</p>
+  </div>
+</footer>
+
+<script src="../JS/main.js"></script>
+</body>
+</html>

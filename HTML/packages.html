@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="دلّل حيوانك - Dalel | حزم وأسعار رعاية الكلاب في هونغ كونغ - الحزمة المميزة والكلاسيكية وحزمة اليوم" />
+  <title>دلّل حيوانك - Dalel | الحزم والأسعار</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/style.css" />
+</head>
+<body>
+
+<a href="#main" class="skip-link">انتقل للمحتوى الرئيسي</a>
+
+<div class="a11y-panel" id="a11yPanel">
+  <h4 data-key="a11y_title">إمكانية الوصول</h4>
+  <div class="a11y-option">
+    <span data-key="a11y_contrast">تباين عالي</span>
+    <label class="toggle-switch"><input type="checkbox" id="toggleContrast"><label for="toggleContrast"></label></label>
+  </div>
+  <div class="a11y-option">
+    <span data-key="a11y_dyslexic">خط للقراءة</span>
+    <label class="toggle-switch"><input type="checkbox" id="toggleDyslexic"><label for="toggleDyslexic"></label></label>
+  </div>
+  <div class="a11y-option">
+    <span data-key="a11y_underline">تسطير الروابط</span>
+    <label class="toggle-switch"><input type="checkbox" id="toggleUnderline"><label for="toggleUnderline"></label></label>
+  </div>
+</div>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <div class="navbar-logo">
+      <a href="../index.html">🐾 <span>دلّل</span> حيوانك</a>
+    </div>
+    <ul class="navbar-links" id="navLinks">
+      <li><a href="../index.html" data-key="nav_home">الرئيسية</a></li>
+      <li><a href="about.html" data-key="nav_about">من نحن</a></li>
+      <li><a href="services.html" data-key="nav_services">الخدمات</a></li>
+      <li><a href="packages.html" class="active" data-key="nav_packages">الحزم</a></li>
+      <li><a href="booking.html" data-key="nav_booking">احجز الآن</a></li>
+      <li><a href="reviews.html" data-key="nav_reviews">آراء العملاء</a></li>
+      <li><a href="contact.html" data-key="nav_contact">تواصل معنا</a></li>
+      <li><a href="rating.html" data-key="nav_rating">قيّمنا</a></li>
+    </ul>
+    <div class="navbar-controls">
+      <div class="font-controls">
+        <button class="font-btn" onclick="decreaseFontSize()">A-</button>
+        <button class="font-btn" onclick="increaseFontSize()">A+</button>
+      </div>
+      <button class="lang-btn" id="langBtn" onclick="toggleLanguage()">English</button>
+      <button class="a11y-btn" onclick="toggleA11yPanel()">♿</button>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+<div class="page-banner">
+  <h1 data-key="packages_title">الحزم والأسعار</h1>
+  <p data-key="packages_sub">اختر الحزمة المناسبة لحيوانك الأليف</p>
+  <div class="breadcrumb">
+    <a href="../index.html">الرئيسية</a><span>›</span><span>الحزم</span>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="info-box">
+      💡 <strong>نصيحة:</strong> جميع الحزم تشمل الإقامة المريحة، الطعام اليومي، المتابعة الصحية، والتواصل مع الفريق. يمكنك إضافة خدمات اختيارية بأسعار منفصلة.
+    </div>
+
+    <div class="packages-grid">
+
+      <!-- DAY PACKAGE -->
+      <div class="package-card">
+        <div class="package-header">
+          <div style="font-size: 2em; margin-bottom: 8px;">🌙</div>
+          <h3>حزمة اليوم</h3>
+          <p style="font-size:0.85em; color:var(--cream-dark); margin: 5px 0;">Day Package</p>
+          <div class="package-price">HK$180 <span>/ يوم</span></div>
+          <p style="font-size:0.78em; color:var(--cream-dark); margin-top: 5px;">مثالية للإقامة القصيرة 1-3 أيام</p>
+        </div>
+        <div class="package-body">
+          <ul class="package-features">
+            <li>تمشية مرتين يومياً (30 دقيقة لكل تمشية)</li>
+            <li>منطقة لعب خارجية مشتركة</li>
+            <li>مسار الرشاقة والتمرين</li>
+            <li>حفر حفرة في منطقة الرمال</li>
+            <li>غرفة مريحة مع فراش دافئ</li>
+            <li>وجبتان يومياً + وجبة خفيفة</li>
+            <li>متابعة صحية أساسية</li>
+            <li>تقرير يومي مختصر للمالك</li>
+          </ul>
+          <p style="font-size:0.82em; color:var(--text-light); margin-bottom: 12px;">⚠️ التحديثات والصور اليومية بتكلفة إضافية HK$30/يوم</p>
+          <a href="booking.html" class="btn btn-primary" style="width:100%; text-align:center; display:block;">احجز هذه الحزمة</a>
+        </div>
+      </div>
+
+      <!-- CLASSIC PACKAGE -->
+      <div class="package-card featured">
+        <div class="package-header">
+          <div style="font-size: 2em; margin-bottom: 8px;">⭐</div>
+          <span class="badge" style="background: white; color: var(--green-soft);">الأكثر طلباً</span>
+          <h3 style="margin-top: 5px;">الحزمة الكلاسيكية</h3>
+          <p style="font-size:0.85em; margin: 5px 0;">Classic Package</p>
+          <div class="package-price">HK$280 <span>/ يوم</span></div>
+          <p style="font-size:0.78em; margin-top: 5px;">مثالية للإقامة 3-14 يوم</p>
+        </div>
+        <div class="package-body">
+          <ul class="package-features">
+            <li>تمشية 3 مرات يومياً (45 دقيقة لكل تمشية)</li>
+            <li>حظيرة لعب داخلية مع ألعاب متنوعة</li>
+            <li>منطقة استرخاء خاصة ومريحة</li>
+            <li>جلسة حلاقة وتنظيف عند الوصول</li>
+            <li>3 وجبات يومية + وجبتان خفيفتان</li>
+            <li>متابعة بيطرية منتظمة</li>
+            <li>صور وتقرير يومي للمالك</li>
+            <li>خدمة التواصل المباشر مع الفريق</li>
+          </ul>
+          <a href="booking.html" class="btn btn-primary" style="width:100%; text-align:center; display:block; background: var(--brown-dark);">احجز هذه الحزمة</a>
+        </div>
+      </div>
+
+      <!-- PREMIUM PACKAGE -->
+      <div class="package-card">
+        <div class="package-header">
+          <div style="font-size: 2em; margin-bottom: 8px;">👑</div>
+          <h3>الحزمة المميزة</h3>
+          <p style="font-size:0.85em; color:var(--cream-dark); margin: 5px 0;">Premium Package</p>
+          <div class="package-price">HK$420 <span>/ يوم</span></div>
+          <p style="font-size:0.78em; color:var(--cream-dark); margin-top: 5px;">تجربة فاخرة ومريحة</p>
+        </div>
+        <div class="package-body">
+          <ul class="package-features">
+            <li>تمشية 4 مرات وأنشطة يومية متنوعة</li>
+            <li>مساحة عشب خاصة ومخصصة</li>
+            <li>صور وفيديوهات وتحديثات يومية</li>
+            <li>مكافآت ومكافآت متفق عليها مسبقاً</li>
+            <li>جلسة حلاقة كاملة خلال الإقامة</li>
+            <li>رعاية بيطرية كاملة مشمولة</li>
+            <li>غرفة فاخرة مع تلفزيون خاص</li>
+            <li>خدمة التوصيل ذهاباً وإياباً مجاناً</li>
+          </ul>
+          <a href="booking.html" class="btn btn-primary" style="width:100%; text-align:center; display:block;">احجز هذه الحزمة</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- LONG STAY + CUSTOM -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">الإقامات الطويلة <span>والحزم المخصصة</span></h2>
+    <div class="section-divider"></div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 style="font-size:1.4em;">🗓️ خصومات الإقامات الطويلة</h2>
+        <p>نقدم خصومات خاصة للإقامات الطويلة أو المتكررة. كلما طالت إقامة كلبك معنا، كلما حصلت على أسعار أفضل:</p>
+        <ul style="list-style: none; margin: 15px 0;">
+          <li style="padding: 6px 0; border-bottom: 1px solid var(--border); color: var(--text-mid);">✅ من 7 إلى 14 يوم: خصم 10% على جميع الحزم</li>
+          <li style="padding: 6px 0; border-bottom: 1px solid var(--border); color: var(--text-mid);">✅ أكثر من 14 يوماً: خصم 15%</li>
+          <li style="padding: 6px 0; border-bottom: 1px solid var(--border); color: var(--text-mid);">✅ شهر كامل: خصم 20% + هدية ترحيبية</li>
+          <li style="padding: 6px 0; color: var(--text-mid);">✅ عميل منتظم (5+ إقامات): خصم 12% دائم</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary" style="margin-top: 10px;">تواصل لحجز إقامة طويلة</a>
+      </div>
+      <div class="about-text">
+        <h2 style="font-size:1.4em;">🌟 الحزم المخصصة</h2>
+        <p>هل لكلبك متطلبات خاصة أو حالة صحية تستدعي رعاية إضافية؟ نقدم حزماً مصممة خصيصاً لاحتياجاته:</p>
+        <ul style="list-style: none; margin: 15px 0;">
+          <li style="padding: 6px 0; border-bottom: 1px solid var(--border); color: var(--text-mid);">🐶 كلاب ذات متطلبات طبية خاصة</li>
+          <li style="padding: 6px 0; border-bottom: 1px solid var(--border); color: var(--text-mid);">🐶 كلاب كبيرة السن تحتاج عناية إضافية</li>
+          <li style="padding: 6px 0; border-bottom: 1px solid var(--border); color: var(--text-mid);">🐶 كلاب بحجم كبير جداً (سلالات كبيرة)</li>
+          <li style="padding: 6px 0; color: var(--text-mid);">🐶 كلاب تعاني من قلق الانفصال</li>
+        </ul>
+        <p style="color: var(--text-light); font-size: 0.88em;">تواصل معنا لمناقشة احتياجاتك وسنصمم لك حزمة مثالية بسعر مناسب.</p>
+        <a href="contact.html" class="btn btn-primary" style="margin-top: 10px;">اطلب حزمة مخصصة</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section class="section section-green">
+  <div class="container">
+    <h2 class="section-title">مقارنة <span>الحزم</span></h2>
+    <div class="section-divider"></div>
+    <div style="overflow-x: auto;">
+      <table style="width:100%; border-collapse: collapse; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 3px 12px var(--shadow);">
+        <thead>
+          <tr style="background: var(--brown-dark); color: var(--cream);">
+            <th style="padding: 14px 18px; text-align: right;">الميزة</th>
+            <th style="padding: 14px 18px; text-align: center;">اليوم<br><small>HK$180</small></th>
+            <th style="padding: 14px 18px; text-align: center; background: var(--green-soft);">الكلاسيكية<br><small>HK$280</small></th>
+            <th style="padding: 14px 18px; text-align: center;">المميزة<br><small>HK$420</small></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="padding: 12px 18px; color: var(--text-dark);">التمشية اليومية</td>
+            <td style="padding: 12px 18px; text-align: center; color: var(--text-mid);">مرتان</td>
+            <td style="padding: 12px 18px; text-align: center; font-weight: bold; color: var(--green-soft);">3 مرات</td>
+            <td style="padding: 12px 18px; text-align: center; font-weight: bold; color: var(--brown-mid);">4 مرات</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border); background: var(--cream-dark);">
+            <td style="padding: 12px 18px; color: var(--text-dark);">صور يومية</td>
+            <td style="padding: 12px 18px; text-align: center; color: var(--text-light);">بتكلفة إضافية</td>
+            <td style="padding: 12px 18px; text-align: center; color: var(--green-soft);">✓</td>
+            <td style="padding: 12px 18px; text-align: center; color: var(--green-soft);">✓ + فيديو</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="padding: 12px 18px; color: var(--text-dark);">جلسة حلاقة</td>
+            <td style="padding: 12px 18px; text-align: center; color: var(--text-light);">—</td>
+            <td style="padding: 12px 18px; text-align: center; color: var(--green-soft);">✓</td>
+            <td style="padding: 12px 18px; text-align: center; color: var(--green-soft);">✓ كاملة</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border); background: var(--cream-dark);">
+            <td style="padding: 12px 18px; color: var(--text-dark);">خدمة التوصيل</td>
+            <td style="padding: 12px 18px; text-align: center; color: var(--text-light);">HK$80</td>
+            <td style="padding: 12px 18px; text-align: center; color: var(--text-light);">HK$80</td>
+            <td style="padding: 12px 18px; text-align: center; color: var(--green-soft);">✓ مجاناً</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="padding: 12px 18px; color: var(--text-dark);">مساحة عشب خاصة</td>
+            <td style="padding: 12px 18px; text-align: center; color: var(--text-light);">—</td>
+            <td style="padding: 12px 18px; text-align: center; color: var(--text-light);">—</td>
+            <td style="padding: 12px 18px; text-align: center; color: var(--green-soft);">✓</td>
+          </tr>
+          <tr>
+            <td style="padding: 12px 18px; color: var(--text-dark);">رعاية بيطرية</td>
+            <td style="padding: 12px 18px; text-align: center; color: var(--text-mid);">أساسية</td>
+            <td style="padding: 12px 18px; text-align: center; color: var(--green-soft);">منتظمة</td>
+            <td style="padding: 12px 18px; text-align: center; color: var(--green-soft);">✓ كاملة</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="text-center mt-20">
+      <a href="booking.html" class="btn btn-primary" style="font-size:1.05em;">احجز الآن</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>🐾 دلّل حيوانك | Dalel</h4>
+      <p>فندق رعاية متخصص للحيوانات الأليفة في هونغ كونغ.</p>
+    </div>
+    <div class="footer-col">
+      <h4>روابط سريعة</h4>
+      <a href="../index.html">الرئيسية</a>
+      <a href="about.html">من نحن</a>
+      <a href="services.html">الخدمات</a>
+      <a href="packages.html">الحزم</a>
+      <a href="booking.html">احجز الآن</a>
+    </div>
+    <div class="footer-col">
+      <h4>المزيد</h4>
+      <a href="reviews.html">آراء العملاء</a>
+      <a href="contact.html">تواصل معنا</a>
+      <a href="rating.html">قيّمنا</a>
+    </div>
+    <div class="footer-col">
+      <h4>تواصل معنا</h4>
+      <p>📍 وان تشاي، هونغ كونغ</p>
+      <p>📞 +852 1234 5678</p>
+      <p>✉️ hello@dalel-hk.com</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p data-key="footer_copy">© 2025 دلّل حيوانك | Dalel - جميع الحقوق محفوظة</p>
+  </div>
+</footer>
+
+<script src="../JS/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="دلّل حيوانك - Dalel | قيّم تجربتك معنا ساعدنا على التحسين" />
+  <title>دلّل حيوانك - Dalel | قيّمنا</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/style.css" />
+</head>
+<body>
+
+<a href="#main" class="skip-link">انتقل للمحتوى الرئيسي</a>
+
+<div class="a11y-panel" id="a11yPanel">
+  <h4 data-key="a11y_title">إمكانية الوصول</h4>
+  <div class="a11y-option">
+    <span data-key="a11y_contrast">تباين عالي</span>
+    <label class="toggle-switch"><input type="checkbox" id="toggleContrast"><label for="toggleContrast"></label></label>
+  </div>
+  <div class="a11y-option">
+    <span data-key="a11y_dyslexic">خط للقراءة</span>
+    <label class="toggle-switch"><input type="checkbox" id="toggleDyslexic"><label for="toggleDyslexic"></label></label>
+  </div>
+  <div class="a11y-option">
+    <span data-key="a11y_underline">تسطير الروابط</span>
+    <label class="toggle-switch"><input type="checkbox" id="toggleUnderline"><label for="toggleUnderline"></label></label>
+  </div>
+</div>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <div class="navbar-logo">
+      <a href="../index.html">🐾 <span>دلّل</span> حيوانك</a>
+    </div>
+    <ul class="navbar-links" id="navLinks">
+      <li><a href="../index.html" data-key="nav_home">الرئيسية</a></li>
+      <li><a href="about.html" data-key="nav_about">من نحن</a></li>
+      <li><a href="services.html" data-key="nav_services">الخدمات</a></li>
+      <li><a href="packages.html" data-key="nav_packages">الحزم</a></li>
+      <li><a href="booking.html" data-key="nav_booking">احجز الآن</a></li>
+      <li><a href="reviews.html" data-key="nav_reviews">آراء العملاء</a></li>
+      <li><a href="contact.html" data-key="nav_contact">تواصل معنا</a></li>
+      <li><a href="rating.html" class="active" data-key="nav_rating">قيّمنا</a></li>
+    </ul>
+    <div class="navbar-controls">
+      <div class="font-controls">
+        <button class="font-btn" onclick="decreaseFontSize()">A-</button>
+        <button class="font-btn" onclick="increaseFontSize()">A+</button>
+      </div>
+      <button class="lang-btn" id="langBtn" onclick="toggleLanguage()">English</button>
+      <button class="a11y-btn" onclick="toggleA11yPanel()">♿</button>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+<div class="page-banner">
+  <h1 data-key="rating_title">قيّمنا</h1>
+  <p data-key="rating_sub">رأيك يهمنا لنتحسن ونقدم الأفضل دائماً</p>
+  <div class="breadcrumb">
+    <a href="../index.html">الرئيسية</a><span>›</span><span>التقييم</span>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <div style="text-align: center; margin-bottom: 35px;">
+      <div style="font-size: 3em; margin-bottom: 10px;">⭐</div>
+      <h2 style="color: var(--brown-dark); font-size: 1.6em;">شاركنا تجربتك</h2>
+      <p style="color: var(--text-mid); max-width: 500px; margin: 8px auto 0;">تقييمك يساعدنا على فهم ما نقوم به بشكل صحيح وما يحتاج إلى تحسين. كل رأي يُحدث فارقاً!</p>
+    </div>
+
+    <div class="rating-form-wrap">
+
+      <div id="ratingAlert" class="alert alert-success">
+        🙏 شكراً جزيلاً على تقييمك! رأيك ثمين بالنسبة لنا ويساعدنا على تقديم خدمة أفضل لكلابكم الجميلة.
+      </div>
+
+      <div id="ratingThankMsg" style="display:none; text-align:center; padding: 30px; background: var(--green-pale); border-radius: 12px; margin-bottom: 20px;">
+        <div style="font-size: 3em; margin-bottom: 10px;">🎉🐾</div>
+        <h3 style="color: var(--green-soft);">شكراً من القلب!</h3>
+        <p style="color: var(--text-mid); margin-top: 8px;">تقييمك يساعدنا على تقديم أفضل رعاية لحيوانات الجميع.</p>
+        <div style="margin-top: 15px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+          <a href="reviews.html" class="btn btn-primary">اقرأ آراء الآخرين</a>
+          <a href="booking.html" class="btn btn-secondary" style="color: var(--brown-dark); border-color: var(--brown-mid);">احجز إقامة</a>
+        </div>
+      </div>
+
+      <form id="ratingForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="ratingName">اسمك</label>
+            <input type="text" id="ratingName" placeholder="اسمك (اختياري)" />
+          </div>
+          <div class="form-group">
+            <label for="ratingVisit">تاريخ الزيارة</label>
+            <input type="month" id="ratingVisit" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="ratingPackageUsed">الحزمة المستخدمة</label>
+          <select id="ratingPackageUsed">
+            <option value="">اختر (اختياري)</option>
+            <option>حزمة اليوم</option>
+            <option>الحزمة الكلاسيكية</option>
+            <option>الحزمة المميزة</option>
+            <option>حزمة مخصصة</option>
+          </select>
+        </div>
+
+        <hr style="border: none; border-top: 1px solid var(--border); margin: 20px 0;">
+
+        <h4 style="color: var(--brown-dark); margin-bottom: 15px;">تقييم الجوانب المختلفة</h4>
+
+        <!-- Rating categories -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
+
+          <div>
+            <label style="font-size: 0.9em; font-weight: 600; color: var(--text-dark);">جودة الرعاية العامة</label>
+            <div class="stars-input" style="margin-top: 5px;">
+              <input type="radio" id="c1s5" name="careRating" value="5"><label for="c1s5">★</label>
+              <input type="radio" id="c1s4" name="careRating" value="4"><label for="c1s4">★</label>
+              <input type="radio" id="c1s3" name="careRating" value="3"><label for="c1s3">★</label>
+              <input type="radio" id="c1s2" name="careRating" value="2"><label for="c1s2">★</label>
+              <input type="radio" id="c1s1" name="careRating" value="1"><label for="c1s1">★</label>
+            </div>
+          </div>
+
+          <div>
+            <label style="font-size: 0.9em; font-weight: 600; color: var(--text-dark);">نظافة المرافق</label>
+            <div class="stars-input" style="margin-top: 5px;">
+              <input type="radio" id="c2s5" name="cleanRating" value="5"><label for="c2s5">★</label>
+              <input type="radio" id="c2s4" name="cleanRating" value="4"><label for="c2s4">★</label>
+              <input type="radio" id="c2s3" name="cleanRating" value="3"><label for="c2s3">★</label>
+              <input type="radio" id="c2s2" name="cleanRating" value="2"><label for="c2s2">★</label>
+              <input type="radio" id="c2s1" name="cleanRating" value="1"><label for="c2s1">★</label>
+            </div>
+          </div>
+
+          <div>
+            <label style="font-size: 0.9em; font-weight: 600; color: var(--text-dark);">احترافية الفريق</label>
+            <div class="stars-input" style="margin-top: 5px;">
+              <input type="radio" id="c3s5" name="staffRating" value="5"><label for="c3s5">★</label>
+              <input type="radio" id="c3s4" name="staffRating" value="4"><label for="c3s4">★</label>
+              <input type="radio" id="c3s3" name="staffRating" value="3"><label for="c3s3">★</label>
+              <input type="radio" id="c3s2" name="staffRating" value="2"><label for="c3s2">★</label>
+              <input type="radio" id="c3s1" name="staffRating" value="1"><label for="c3s1">★</label>
+            </div>
+          </div>
+
+          <div>
+            <label style="font-size: 0.9em; font-weight: 600; color: var(--text-dark);">القيمة مقابل السعر</label>
+            <div class="stars-input" style="margin-top: 5px;">
+              <input type="radio" id="c4s5" name="valueRating" value="5"><label for="c4s5">★</label>
+              <input type="radio" id="c4s4" name="valueRating" value="4"><label for="c4s4">★</label>
+              <input type="radio" id="c4s3" name="valueRating" value="3"><label for="c4s3">★</label>
+              <input type="radio" id="c4s2" name="valueRating" value="2"><label for="c4s2">★</label>
+              <input type="radio" id="c4s1" name="valueRating" value="1"><label for="c4s1">★</label>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form-group">
+          <label>التقييم العام *</label>
+          <div class="stars-input" style="justify-content: center; gap: 10px;">
+            <input type="radio" id="os5" name="overallRating" value="5"><label for="os5" style="font-size: 2.5em;">★</label>
+            <input type="radio" id="os4" name="overallRating" value="4"><label for="os4" style="font-size: 2.5em;">★</label>
+            <input type="radio" id="os3" name="overallRating" value="3"><label for="os3" style="font-size: 2.5em;">★</label>
+            <input type="radio" id="os2" name="overallRating" value="2"><label for="os2" style="font-size: 2.5em;">★</label>
+            <input type="radio" id="os1" name="overallRating" value="1"><label for="os1" style="font-size: 2.5em;">★</label>
+          </div>
+          <div class="form-error" id="ratingStarErr">يرجى اختيار التقييم العام</div>
+        </div>
+
+        <div class="form-group">
+          <label for="ratingFeedback">تعليقاتك واقتراحاتك</label>
+          <textarea id="ratingFeedback" rows="4" placeholder="ما أعجبك؟ ما الذي يمكن تحسينه؟ هل توصي بنا لأصدقائك؟..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>هل ستوصي بنا لأصدقائك؟</label>
+          <div style="display: flex; gap: 15px; margin-top: 8px;">
+            <label style="display: flex; align-items: center; gap: 6px; font-weight: normal; cursor: pointer;">
+              <input type="radio" name="recommend" value="yes"> نعم بالتأكيد! 🐾
+            </label>
+            <label style="display: flex; align-items: center; gap: 6px; font-weight: normal; cursor: pointer;">
+              <input type="radio" name="recommend" value="maybe"> ربما
+            </label>
+            <label style="display: flex; align-items: center; gap: 6px; font-weight: normal; cursor: pointer;">
+              <input type="radio" name="recommend" value="no"> لا
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%; font-size:1.05em; padding:14px;">
+          ⭐ إرسال التقييم
+        </button>
+      </form>
+    </div>
+
+    <!-- Previous ratings summary -->
+    <div style="margin-top: 40px; text-align: center;">
+      <h3 style="color: var(--brown-dark); margin-bottom: 20px;">ملخص تقييماتنا</h3>
+      <div style="max-width: 400px; margin: 0 auto; background: white; padding: 25px; border-radius: 12px; box-shadow: 0 3px 12px var(--shadow);">
+        <div style="margin-bottom: 12px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+            <span style="font-size: 0.85em; color: var(--text-mid);">جودة الرعاية</span>
+            <span style="color: #f0a500;">★★★★★ 4.9</span>
+          </div>
+          <div style="background: var(--cream-dark); height: 8px; border-radius: 4px; overflow:hidden;">
+            <div style="background: var(--green-soft); width: 98%; height: 100%; border-radius: 4px;"></div>
+          </div>
+        </div>
+        <div style="margin-bottom: 12px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+            <span style="font-size: 0.85em; color: var(--text-mid);">النظافة</span>
+            <span style="color: #f0a500;">★★★★★ 4.8</span>
+          </div>
+          <div style="background: var(--cream-dark); height: 8px; border-radius: 4px; overflow:hidden;">
+            <div style="background: var(--green-soft); width: 96%; height: 100%; border-radius: 4px;"></div>
+          </div>
+        </div>
+        <div style="margin-bottom: 12px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+            <span style="font-size: 0.85em; color: var(--text-mid);">الفريق</span>
+            <span style="color: #f0a500;">★★★★★ 4.9</span>
+          </div>
+          <div style="background: var(--cream-dark); height: 8px; border-radius: 4px; overflow:hidden;">
+            <div style="background: var(--green-soft); width: 98%; height: 100%; border-radius: 4px;"></div>
+          </div>
+        </div>
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+            <span style="font-size: 0.85em; color: var(--text-mid);">القيمة مقابل السعر</span>
+            <span style="color: #f0a500;">★★★★☆ 4.6</span>
+          </div>
+          <div style="background: var(--cream-dark); height: 8px; border-radius: 4px; overflow:hidden;">
+            <div style="background: var(--green-soft); width: 92%; height: 100%; border-radius: 4px;"></div>
+          </div>
+        </div>
+        <div style="margin-top: 18px; font-size: 0.85em; color: var(--text-light);">استناداً إلى 350+ تقييم</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>🐾 دلّل حيوانك | Dalel</h4>
+      <p>فندق رعاية متخصص للحيوانات الأليفة في هونغ كونغ.</p>
+    </div>
+    <div class="footer-col">
+      <h4>روابط سريعة</h4>
+      <a href="../index.html">الرئيسية</a>
+      <a href="about.html">من نحن</a>
+      <a href="services.html">الخدمات</a>
+      <a href="packages.html">الحزم</a>
+      <a href="booking.html">احجز الآن</a>
+    </div>
+    <div class="footer-col">
+      <h4>المزيد</h4>
+      <a href="reviews.html">آراء العملاء</a>
+      <a href="contact.html">تواصل معنا</a>
+      <a href="rating.html">قيّمنا</a>
+    </div>
+    <div class="footer-col">
+      <h4>تواصل معنا</h4>
+      <p>📍 وان تشاي، هونغ كونغ</p>
+      <p>📞 +852 1234 5678</p>
+      <p>✉️ hello@dalel-hk.com</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p data-key="footer_copy">© 2025 دلّل حيوانك | Dalel - جميع الحقوق محفوظة</p>
+  </div>
+</footer>
+
+<script src="../JS/main.js"></script>
+</body>
+</html>
